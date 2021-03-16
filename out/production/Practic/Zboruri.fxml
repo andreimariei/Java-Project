@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="428.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FlightController">
+   <children>
+      <ComboBox fx:id="Plecare" layoutX="59.0" layoutY="107.0" onAction="#selectPlecare" prefWidth="150.0" />
+      <ComboBox fx:id="Sosire" layoutX="225.0" layoutY="107.0" onAction="#selectSosire" prefWidth="150.0" />
+      <Label layoutX="115.0" layoutY="83.0" text="Plecare" />
+      <DatePicker fx:id="dataPlecare" layoutX="400.0" layoutY="107.0" />
+      <Label layoutX="284.0" layoutY="83.0" text="Sosire" />
+      <Label layoutX="434.0" layoutY="83.0" text="Alegeti data plecarii" />
+      <TableView fx:id="tabelZboruri" layoutX="59.0" layoutY="170.0" prefHeight="200.0" prefWidth="514.0">
+        <columns>
+          <TableColumn fx:id="tabelPlecare" prefWidth="120.0" text="Plecare" />
+          <TableColumn fx:id="tabelSosire" prefWidth="82.0" text="Sosire" />
+            <TableColumn fx:id="tabelDPlecare" prefWidth="83.0" text="DataPlecarii" />
+            <TableColumn fx:id="tabelDSosire" prefWidth="117.0" text="DataSosirii" />
+            <TableColumn fx:id="tabelNrLoc" prefWidth="110.0" text="Nr. de locuri" />
+        </columns>
+      </TableView>
+      <Label layoutX="101.0" layoutY="26.0" text="Logat drept:" />
+      <TextField fx:id="userLogged" layoutX="167.0" layoutY="22.0" />
+      <Button layoutX="274.0" layoutY="381.0" mnemonicParsing="false" onAction="#Refresh" text="Refresh" />
+      <Button layoutX="461.0" layoutY="381.0" mnemonicParsing="false" onAction="#buyTicket" text="Cumpara bilet" />
+   </children>
+</AnchorPane>
